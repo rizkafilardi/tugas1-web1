@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangkuman HTML Basic Tag</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #fff);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #1976d2;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 40px;
+            border-bottom: 3px solid #1976d2;
+            padding-bottom: 10px;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #039be5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .code {
+            background-color: #f1f8e9;
+            border-left: 5px solid #388e3c;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            margin: 20px 0;
+        }
+        .image-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-style: italic;
+            color: #555;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        .tip-box {
+            background-color: #e3f2fd;
+            border-left: 6px solid #1976d2;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .tip-box h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Rangkuman HTML Basic Tag</h1>
+    
+    <h2>Apa itu HTML?</h2>
+    <p>HTML (<span class="highlight">Hypertext Markup Language</span>) adalah bahasa markup yang digunakan untuk membangun dan menampilkan halaman web di browser. HTML telah menjadi standar utama dalam pengembangan web yang diatur oleh <i>World Wide Web Consortium</i> (W3C).</p>
+    
+    <h2>Sejarah HTML</h2>
+    <ul>
+        <li>HTML 2.0 disetujui pada 22 September 1995</li>
+        <li>HTML 3.2 diluncurkan pada 14 Januari 1996</li>
+        <li>HTML 4.0 dirilis pada 18 Desember 1997</li>
+        <li>XHTML 1.0, penggabungan HTML dan XML, diumumkan pada 24 Januari 2000</li>
+    </ul>
+
+    <h2>Ciri-Ciri Dokumen HTML</h2>
+    <ul>
+        <li>Memiliki ekstensi file berupa <b>.htm</b> atau <b>.html</b>.</li>
+        <li>Bersifat <i>non case-sensitive</i>, artinya tag dapat ditulis dalam huruf besar maupun kecil.</li>
+        <li>Terdiri atas tag pembuka dan penutup, walaupun beberapa tag bisa berdiri sendiri tanpa penutup (seperti <code>&lt;br /&gt;</code>).</li>
+        <li>Tag HTML bersifat saling berpasangan dan bersarang, seperti tag <code>&lt;html&gt;</code> yang membungkus seluruh isi dokumen.</li>
+    </ul>
+
+    <h3>Struktur Standar Dokumen HTML</h3>
+    <div class="code">
+        <pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Judul Halaman&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        ...konten halaman...
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </div>
+    
+    <h2>Tag Penting dalam HTML</h2>
+    <ul>
+        <li><b>Tag Heading:</b> &lt;h1&gt; sampai &lt;h6&gt; digunakan untuk membuat judul dan sub-judul.</li>
+        <li><b>Tag Paragraf:</b> &lt;p&gt; digunakan untuk menuliskan paragraf.</li>
+        <li><b>Tag Gambar:</b> &lt;img src="..." alt="..."&gt; digunakan untuk menambahkan gambar di halaman web.</li>
+        <li><b>Tag Link:</b> &lt;a href="..."&gt; digunakan untuk membuat hyperlink ke halaman atau file lain.</li>
+        <li><b>Tag Komentar:</b> &lt;!-- komentar --&gt; digunakan untuk menulis komentar dalam kode HTML.</li>
+    </ul>
+
+    <h3>Tips & Trik Penggunaan Tag HTML</h3>
+    <div class="tip-box">
+        <h3>Tips untuk Tag Gambar (&lt;img&gt;)</h3>
+        <p>Pastikan Anda selalu menggunakan atribut <b>alt</b> untuk memberikan deskripsi gambar. Ini membantu dalam SEO dan aksesibilitas.</p>
+        <div class="code">
+            <pre>&lt;img src="logo.png" alt="Logo Perusahaan"&gt;</pre>
+        </div>
+    </div>
+
+    <h2>Contoh Aplikasi HTML</h2>
+    <div class="image-section">
+        <img src="download (1).jpg" alt="Contoh Website HTML">
+    </div>
+    
+    <h2>Kesimpulan</h2>
+    <p>HTML adalah fondasi dari pengembangan web. Dengan mempelajari tag-tag dasar, Anda bisa membuat halaman web yang terstruktur dengan baik. Eksplorasi lebih lanjut dengan tag lanjutan untuk membuat website yang lebih interaktif!</p>
+
+    <div class="footer">
+        <p><i>Selamat belajar, dan teruslah berkreasi!</i></p>
+    </div>
+</div>
+
+</body>
+</html>
